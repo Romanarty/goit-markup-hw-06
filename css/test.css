@@ -1,0 +1,360 @@
+/* Header */
+
+.header-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  width: 350px;
+  height: 80px;
+}
+.contacts-link-phone {
+  color: var(--graphite);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.contacts-link-mail {
+  color: var(--graphite);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-link-mail:hover,
+.contacts-link-mail:focus {
+  color: var(--nav-blue);
+}
+.contacts-link-phone:hover,
+.contacts-link-phone:focus {
+  color: var(--nav-blue);
+}
+
+/* .contacts-link-phone::before {
+  display: flex;
+  width: 10px;
+  height: 16px;
+  background-image: url(../svg/phone.svg);
+  margin-right: 10px;
+  content: '';
+} */
+/* 
+.contacts-link-mail::before {
+  display: block;
+  width: 16px;
+  height: 12px;
+  background-image: url(../svg/mail.svg);
+  margin-right: 10px;
+  content: '';
+  align-items: center;
+} */
+/* hero */
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--general-white);
+  text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: url(./Img.jpg);
+}
+
+.adv-1::before {
+  content: '';
+  display: inline-block;
+  height: 120px;
+  width: 270px;
+  background-color: var(--grey);
+  background-image: url(../svg/Внимание\ к\ деталям.svg);
+  border-radius: 4px;
+}
+
+.adv-2::before {
+  content: '';
+  display: inline-block;
+  height: 120px;
+  width: 270px;
+  background-color: var(--grey);
+  background-image: url(../svg/Пунктуальность.svg);
+  border-radius: 4px;
+}
+.adv-3::before {
+  content: '';
+  display: inline-block;
+  height: 120px;
+  width: 270px;
+  background-color: var(--grey);
+  background-image: url(../svg/Планирование.svg);
+  border-radius: 4px;
+}
+.adv-4::before {
+  content: '';
+  display: inline-block;
+  height: 120px;
+  width: 270px;
+  background-color: var(--grey);
+  background-image: url(../svg/Современные\ технологии.svg);
+  border-radius: 4px;
+}
+
+/* Our Clients */
+.clients {
+  width: 1200px;
+  height: 182px;
+  margin: 94px 215px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
+
+.logo1 {
+  display: inline-flex;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-image: url(../svg/logo\ 1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo1:hover,
+.logo1:focus {
+  color: blue;
+}
+
+.logo2 {
+  display: block;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-image: url(../svg/logo\ 2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo3 {
+  display: block;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-image: url(../svg/logo\ 3.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo4 {
+  display: block;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-image: url(../svg/logo\ 4.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo5 {
+  display: block;
+  width: 170px;
+  height: 90px;
+  padding: 22px 55px 21px 56px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-image: url(../svg/logo\ 5.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo6 {
+  display: block;
+  width: 170px;
+  height: 90px;
+  padding: 22px 40.52px 22.52px 41px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-image: url(../svg/logo\ 6.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.join {
+  display: block;
+  width: 206px;
+  height: 80px;
+  margin-top: 15px;
+  margin-left: 70px;
+}
+.h3-footer {
+  text-transform: uppercase;
+  color: var(--general-white);
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  background-color: white;
+}
+
+.twitter {
+  border-radius: 50%;
+  height: 44px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  content: '';
+}
+
+.icon {
+  background-position: center;
+}
+
+.icon:hover {
+  fill: var(--nav-blue);
+  cursor: pointer;
+}
+
+/* .instagram {
+  border-radius: 50%;
+
+  height: 44px;
+
+  background-color: var(--graphite);
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  content: '';
+}
+
+.facebook {
+  border-radius: 50%;
+
+  height: 44px;
+
+  background-color: var(--graphite);
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  content: '';
+}
+.linkedin {
+  border-radius: 50%;
+  outline: white 1px solid;
+
+  height: 44px;
+
+  background-color: var(--graphite);
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  content: '';
+  box-sizing: border-box;
+} */
+.button-icon {
+  height: 40px;
+  width: 40px;
+  fill: red;
+}
+
+.logo-1 {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.logo-2 {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.logo-3 {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.logo-4 {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.logo-5 {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.logo-6 {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
