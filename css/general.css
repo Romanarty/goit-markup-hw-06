@@ -291,10 +291,11 @@ footer {
 .footer-container {
   display: flex;
   margin: 0 auto;
-  width: 1170px;
+  width: 1200px;
   align-items: center;
   padding-top: 55px;
   padding-bottom: 55px;
+  justify-content: space-between;
 }
 
 .footer-contacts {
@@ -310,8 +311,7 @@ footer {
 .join {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
-  padding: 0;
+  margin-left: 0;
 }
 .footer-contacts-link {
   color: var(--light-white);
@@ -405,14 +405,298 @@ footer {
   border-radius: 4px;
 }
 
-.modal-button {
+.button-close {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: rgba(255, 255, 255, 0.9);
   padding: 0;
+  border: none;
+  outline: none;
+  background-color: var(--general-white);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close svg path:hover,
+.button-close svg path:focus {
+  fill: var(--nav-blue);
+  cursor: pointer;
+}
+
+/* Homework6 */
+
+/* Modal stiling */
+.modal-form .button {
+  align-items: center;
+  margin-bottom: 40px;
+}
+.form-list {
+  display: block;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.modal-form h2 {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+input[id='comment'] {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+label p {
+  margin: 0;
+}
+
+.license {
+  text-decoration: underline;
+}
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+.form-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--graphite);
+}
+
+.form-button {
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.input-wrapper {
+  display: block;
+  position: relative;
+}
+
+.input-wrapper:focus-within > .form-icon {
+  fill: var(--nav-blue);
+  cursor: pointer;
+}
+
+.form-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0px;
+  padding-left: 40px;
+  font-family: inherit;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus,
+.form-input:hover {
+  border-color: var(--nav-blue);
+  cursor: pointer;
+  outline: none;
+}
+
+.textarea {
+  width: 448px;
+  height: 120px;
+  padding-top: 12px;
+  padding-left: 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea:hover,
+.textarea:focus {
+  border-color: var(--nav-blue);
+  cursor: pointer;
+  outline: none;
+}
+
+.form-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-icon:focus,
+.form-icon:hover {
+  fill: var(--nav-blue);
+  cursor: pointer;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  align-items: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--nav-blue);
+  background-image: url(../svg/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
+}
+
+.checkbox-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: inline-block;
+}
+
+.textarea::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 55px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  background-color: var(--nav-blue);
+  color: var(--general-white);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* footer-form */
+
+.form-link > label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.form-link {
+  width: 570px;
+  height: 86px;
+  align-items: flex-end;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 15px;
+  border-radius: 4px;
+  background-color: var(----hero-graphite);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.input-button {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.footer-input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input {
+  color: #fff;
+}
+
+.sign-button {
+  position: relative;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  background-color: var(--nav-blue);
+  color: var(--general-white);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.svg-form {
+  margin-left: 10px;
 }
