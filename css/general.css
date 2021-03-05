@@ -634,7 +634,7 @@ label p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
-  color: #ffffff;
+  color: var(--general-white);
   margin-top: 0;
 }
 
@@ -673,7 +673,8 @@ label p {
 }
 
 .footer-input {
-  color: #fff;
+  color: var(--general-white);
+  outline: none;
 }
 
 .sign-button {

@@ -478,6 +478,8 @@ footer {
   background-color: var(----hero-graphite);
   margin-top: 20px;
   margin-right: 12px;
+  color: var(--general-white);
+  outline: none;
 }
 .form-label {
   font-family: Roboto;
@@ -488,8 +490,7 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
-
-  color: #ffffff;
+  color: var(--general-white);
 }
 .form-button {
   position: relative;
